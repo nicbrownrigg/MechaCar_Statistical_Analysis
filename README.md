@@ -10,33 +10,33 @@ The p-value is at 5.35e-11 which is far less than 0.05, so the slope cannot be z
 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 Roughly ~71% of MPG can be predicted by this model based on the .7149 R-squared value we have, which means that we can infer there likely are other unaccounted for factors for MPG that our model doesn't account for. Which means that as a model, this prediction of MPG is ineffective.
 
-![Del1Summary](images/Del1Summary)
+![Del1Summary](https://github.com/nicbrownrigg/MechaCar_Statistical_Analysis/blob/main/images/Del1Summary.png)
 
 ## Summary Statistics on Suspension Coils
 - The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
 It appears that lots 1 and 2 are within specifications, with lot 2 pushing some slightly higher variance in their data than lot 1's tight data set. Both mean and median values are at approximately 1500 for them. Lot 3 appears to be having some issues with the design specs, falling flat on the 1500 mean and median values and having a massive variance and standard deviation from the specifications dictated. Lot 2 has a large variance of 7.47, lot 3 has over 22 times that variance at 170.29 and has almost 5 times the standard deviation. Lot 3 needs to be reviewed as this poses a financial and safety risk for our customers.
 
-[total]
+![total](https://github.com/nicbrownrigg/MechaCar_Statistical_Analysis/blob/main/images/totalSummary.png)
 
-[lot]
+![lot](https://github.com/nicbrownrigg/MechaCar_Statistical_Analysis/blob/main/images/LotSummary.png)
 
 ## T-Tests on Suspension Coils
 Utilizing a sample population mean and a null hypothesis of "all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch", we performed T Tests on all the lots at once and the individual lots. Here's the lots as a whole:
 
-[tTestAllLots]
+![tTestAllLots](https://github.com/nicbrownrigg/MechaCar_Statistical_Analysis/blob/main/images/tTestAllLots.png)
 
 Our true mean is 1498.78 like our last section. And due to our p-value being above 0.05, we cannot reject the null hypothesis.
 
 Below are our findings for each lot:
 ### Lot 1
-[tTestLot1]
+![tTestLot1](https://github.com/nicbrownrigg/MechaCar_Statistical_Analysis/blob/main/images/tTestLot1.png)
 
 ### Lot 2
-[tTestLot2]
+![tTestLot2](https://github.com/nicbrownrigg/MechaCar_Statistical_Analysis/blob/main/images/tTestLot2.png)
 
 ### Lot 3
-[tTestLot3]
+![tTestLot3](https://github.com/nicbrownrigg/MechaCar_Statistical_Analysis/blob/main/images/tTestLot3.png)
 
 As you can see above, all of our true means are not equal to the sample mean. After evaluating the p-values for each lot, lot 1 and lot 2 have values over 0.05 with values at 1 and .61 which means that we fail to reject the null hypothesis that they are statistically different from the sample population of 1500. However, lot 3 has a p-value of 0.04. This indicates a statistical difference from the other populations and means that lot 3, unlike the other lots, is statistically different from the sample population.
 
