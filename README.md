@@ -21,4 +21,23 @@ It appears that lots 1 and 2 are within specifications, with lot 2 pushing some 
 
 [lot]
 
-## 
+## T-Tests on Suspension Coils
+Utilizing a sample population mean and a null hypothesis of "all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch", we performed T Tests on all the lots at once and the individual lots. Here's the lots as a whole:
+
+[tTestAllLots]
+
+Our true mean is 1498.78 like our last section. And due to our p-value being above 0.05, we cannot reject the null hypothesis.
+
+Below are our findings for each lot:
+### Lot 1
+[tTestLot1]
+
+### Lot 2
+[tTestLot2]
+
+### Lot 3
+[tTestLot3]
+
+As you can see above, all of our true means are not equal to the sample mean. After evaluating the p-values for each lot, lot 1 and lot 2 have values over 0.05 with values at 1 and .61 which means that we fail to reject the null hypothesis that they are statistically different from the sample population of 1500. However, lot 3 has a p-value of 0.04. This indicates a statistical difference from the other populations and means that lot 3, unlike the other lots, is statistically different from the sample population.
+
+## Study Design: MechaCar vs Competition
